@@ -1,0 +1,2 @@
+# Kassza
+RFT-Kassza
