@@ -17,7 +17,29 @@ namespace Kasse
             InitializeComponent();
         }
 
+        //Felhasználó-felület betöltése
         private void Employee_button_Click(object sender, EventArgs e)
+        {
+            Employe Felhasznalo = new Employe();
+            Felhasznalo.Show();
+        }
+
+        //Pénztár-felület betöltése
+        private void Cash_button_Click(object sender, EventArgs e)
+        {
+            Cash Penztar = new Cash();
+            Penztar.Show();
+        }
+
+        //Cikk kezelő-felület betöltése
+        private void Product_button_Click(object sender, EventArgs e)
+        {
+            Product Cikk_kezelo = new Product();
+            Cikk_kezelo.Show();
+        }
+
+        //Kijelentkezés
+        private void Logout_button_Click(object sender, EventArgs e)
         {
 
         }

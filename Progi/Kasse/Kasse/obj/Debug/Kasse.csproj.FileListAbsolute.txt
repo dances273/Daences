@@ -13,3 +13,15 @@ D:\Zoltán\Visual studio 2013\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
 F:\Zoltán\Emachines E528 laptop\Zoltán\Visual studio 2013\Kasse\Kasse\bin\Debug\Kasse.exe.config
 F:\Zoltán\Emachines E528 laptop\Zoltán\Visual studio 2013\Kasse\Kasse\obj\Debug\Kasse.exe
 F:\Zoltán\Emachines E528 laptop\Zoltán\Visual studio 2013\Kasse\Kasse\obj\Debug\Kasse.pdb
+D:\GitHub\Kassza\Progi\Kasse\Kasse\bin\Debug\Kasse.exe.config
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.exe
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.pdb
+D:\GitHub\Kassza\Progi\Kasse\Kasse\bin\Debug\Kasse.exe
+D:\GitHub\Kassza\Progi\Kasse\Kasse\bin\Debug\Kasse.pdb
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.csprojResolveAssemblyReference.cache
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Cash.resources
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Login.resources
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Employe.resources
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
+D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
