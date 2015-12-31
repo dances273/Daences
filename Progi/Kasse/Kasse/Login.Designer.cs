@@ -84,7 +84,7 @@
             this.Employee_button.TabIndex = 4;
             this.Employee_button.Text = "Felhasználó";
             this.Employee_button.UseVisualStyleBackColor = true;
-            this.Employee_button.Visible = false;
+            this.Employee_button.Click += new System.EventHandler(this.Employee_button_Click);
             // 
             // Product_button
             // 
@@ -94,7 +94,7 @@
             this.Product_button.TabIndex = 5;
             this.Product_button.Text = "Cikk kezelő";
             this.Product_button.UseVisualStyleBackColor = true;
-            this.Product_button.Visible = false;
+            this.Product_button.Click += new System.EventHandler(this.Product_button_Click);
             // 
             // Cash_button
             // 
@@ -114,7 +114,7 @@
             this.Logout_button.TabIndex = 7;
             this.Logout_button.Text = "Kijelentkezés";
             this.Logout_button.UseVisualStyleBackColor = true;
-            this.Logout_button.Visible = false;
+            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
             // 
             // Account_button
             // 
@@ -124,7 +124,7 @@
             this.Account_button.TabIndex = 8;
             this.Account_button.Text = "Számla";
             this.Account_button.UseVisualStyleBackColor = true;
-            this.Account_button.Visible = false;
+            this.Account_button.Click += new System.EventHandler(this.Account_button_Click);
             // 
             // Azonosito_nev
             // 
@@ -142,7 +142,6 @@
             this.Login_Button.TabIndex = 10;
             this.Login_Button.Text = "Bejelentkezés";
             this.Login_Button.UseVisualStyleBackColor = true;
-            this.Login_Button.Visible = false;
             this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Login
