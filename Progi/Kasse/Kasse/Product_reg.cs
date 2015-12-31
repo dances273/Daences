@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Kasse
 {
@@ -15,6 +16,13 @@ namespace Kasse
         public Product_reg()
         {
             InitializeComponent();
+        }
+
+        private void Mentes_Button_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=Dances-PC\SQLExpress;Initial Catalog=Kasse;Integrated Security=True");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Kasse
         public Cash()
         {
             InitializeComponent();
+            textBox1.Text = "Hello" + Environment.NewLine+"Szia!";
         }
 
         private void button_Click(object sender, EventArgs e)

@@ -36,6 +36,9 @@
             this.Product_button = new System.Windows.Forms.Button();
             this.Cash_button = new System.Windows.Forms.Button();
             this.Logout_button = new System.Windows.Forms.Button();
+            this.Account_button = new System.Windows.Forms.Button();
+            this.Azonosito_nev = new System.Windows.Forms.Label();
+            this.Login_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -81,21 +84,21 @@
             this.Employee_button.TabIndex = 4;
             this.Employee_button.Text = "Felhasználó";
             this.Employee_button.UseVisualStyleBackColor = true;
-            this.Employee_button.Click += new System.EventHandler(this.Employee_button_Click);
+            this.Employee_button.Visible = false;
             // 
             // Product_button
             // 
-            this.Product_button.Location = new System.Drawing.Point(244, 50);
+            this.Product_button.Location = new System.Drawing.Point(244, 79);
             this.Product_button.Name = "Product_button";
             this.Product_button.Size = new System.Drawing.Size(75, 23);
             this.Product_button.TabIndex = 5;
             this.Product_button.Text = "Cikk kezelő";
             this.Product_button.UseVisualStyleBackColor = true;
-            this.Product_button.Click += new System.EventHandler(this.Product_button_Click);
+            this.Product_button.Visible = false;
             // 
             // Cash_button
             // 
-            this.Cash_button.Location = new System.Drawing.Point(244, 79);
+            this.Cash_button.Location = new System.Drawing.Point(244, 108);
             this.Cash_button.Name = "Cash_button";
             this.Cash_button.Size = new System.Drawing.Size(75, 23);
             this.Cash_button.TabIndex = 6;
@@ -105,20 +108,51 @@
             // 
             // Logout_button
             // 
-            this.Logout_button.Location = new System.Drawing.Point(98, 105);
+            this.Logout_button.Location = new System.Drawing.Point(98, 127);
             this.Logout_button.Name = "Logout_button";
             this.Logout_button.Size = new System.Drawing.Size(100, 23);
             this.Logout_button.TabIndex = 7;
             this.Logout_button.Text = "Kijelentkezés";
             this.Logout_button.UseVisualStyleBackColor = true;
             this.Logout_button.Visible = false;
-            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
+            // 
+            // Account_button
+            // 
+            this.Account_button.Location = new System.Drawing.Point(244, 50);
+            this.Account_button.Name = "Account_button";
+            this.Account_button.Size = new System.Drawing.Size(75, 23);
+            this.Account_button.TabIndex = 8;
+            this.Account_button.Text = "Számla";
+            this.Account_button.UseVisualStyleBackColor = true;
+            this.Account_button.Visible = false;
+            // 
+            // Azonosito_nev
+            // 
+            this.Azonosito_nev.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Azonosito_nev.Location = new System.Drawing.Point(16, 93);
+            this.Azonosito_nev.Name = "Azonosito_nev";
+            this.Azonosito_nev.Size = new System.Drawing.Size(222, 23);
+            this.Azonosito_nev.TabIndex = 9;
+            // 
+            // Login_Button
+            // 
+            this.Login_Button.Location = new System.Drawing.Point(98, 98);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.Size = new System.Drawing.Size(100, 23);
+            this.Login_Button.TabIndex = 10;
+            this.Login_Button.Text = "Bejelentkezés";
+            this.Login_Button.UseVisualStyleBackColor = true;
+            this.Login_Button.Visible = false;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 150);
+            this.ClientSize = new System.Drawing.Size(348, 179);
+            this.Controls.Add(this.Login_Button);
+            this.Controls.Add(this.Azonosito_nev);
+            this.Controls.Add(this.Account_button);
             this.Controls.Add(this.Logout_button);
             this.Controls.Add(this.Cash_button);
             this.Controls.Add(this.Product_button);
@@ -129,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +179,9 @@
         private System.Windows.Forms.Button Product_button;
         private System.Windows.Forms.Button Cash_button;
         private System.Windows.Forms.Button Logout_button;
+        private System.Windows.Forms.Button Account_button;
+        private System.Windows.Forms.Label Azonosito_nev;
+        private System.Windows.Forms.Button Login_Button;
     }
 }
 

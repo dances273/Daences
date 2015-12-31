@@ -47,7 +47,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
-            this.Enter = new System.Windows.Forms.Button();
+            this.Igen_Enter = new System.Windows.Forms.Button();
             this.buttonX = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,15 +56,15 @@
             this.Fizetendotext.Location = new System.Drawing.Point(12, 13);
             this.Fizetendotext.Name = "Fizetendotext";
             this.Fizetendotext.ReadOnly = true;
-            this.Fizetendotext.Size = new System.Drawing.Size(100, 20);
+            this.Fizetendotext.Size = new System.Drawing.Size(158, 20);
             this.Fizetendotext.TabIndex = 0;
             // 
             // Tetelszamlalotext
             // 
-            this.Tetelszamlalotext.Location = new System.Drawing.Point(184, 13);
+            this.Tetelszamlalotext.Location = new System.Drawing.Point(309, 13);
             this.Tetelszamlalotext.Name = "Tetelszamlalotext";
             this.Tetelszamlalotext.ReadOnly = true;
-            this.Tetelszamlalotext.Size = new System.Drawing.Size(100, 20);
+            this.Tetelszamlalotext.Size = new System.Drawing.Size(129, 20);
             this.Tetelszamlalotext.TabIndex = 1;
             // 
             // Fizetendo
@@ -81,7 +81,7 @@
             // 
             this.Tetelszamlalo.AutoSize = true;
             this.Tetelszamlalo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Tetelszamlalo.Location = new System.Drawing.Point(181, 40);
+            this.Tetelszamlalo.Location = new System.Drawing.Point(306, 40);
             this.Tetelszamlalo.Name = "Tetelszamlalo";
             this.Tetelszamlalo.Size = new System.Drawing.Size(50, 13);
             this.Tetelszamlalo.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.textBox1.Location = new System.Drawing.Point(15, 56);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 375);
+            this.textBox1.Size = new System.Drawing.Size(423, 375);
             this.textBox1.TabIndex = 4;
             // 
             // label1
@@ -108,13 +108,14 @@
             // Tetel_input
             // 
             this.Tetel_input.Location = new System.Drawing.Point(62, 447);
+            this.Tetel_input.MaxLength = 20;
             this.Tetel_input.Name = "Tetel_input";
-            this.Tetel_input.Size = new System.Drawing.Size(222, 20);
+            this.Tetel_input.Size = new System.Drawing.Size(376, 20);
             this.Tetel_input.TabIndex = 6;
             // 
             // KP_button
             // 
-            this.KP_button.Location = new System.Drawing.Point(291, 105);
+            this.KP_button.Location = new System.Drawing.Point(511, 106);
             this.KP_button.Name = "KP_button";
             this.KP_button.Size = new System.Drawing.Size(75, 23);
             this.KP_button.TabIndex = 7;
@@ -124,7 +125,7 @@
             // Card_button
             // 
             this.Card_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Card_button.Location = new System.Drawing.Point(373, 104);
+            this.Card_button.Location = new System.Drawing.Point(593, 105);
             this.Card_button.Name = "Card_button";
             this.Card_button.Size = new System.Drawing.Size(75, 23);
             this.Card_button.TabIndex = 8;
@@ -133,7 +134,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(291, 222);
+            this.button1.Location = new System.Drawing.Point(511, 223);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 35);
             this.button1.TabIndex = 9;
@@ -143,7 +144,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(332, 222);
+            this.button2.Location = new System.Drawing.Point(552, 223);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(34, 35);
             this.button2.TabIndex = 10;
@@ -153,7 +154,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(372, 222);
+            this.button3.Location = new System.Drawing.Point(592, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(34, 35);
             this.button3.TabIndex = 11;
@@ -163,7 +164,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(291, 181);
+            this.button4.Location = new System.Drawing.Point(511, 182);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(34, 35);
             this.button4.TabIndex = 12;
@@ -173,7 +174,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(332, 181);
+            this.button5.Location = new System.Drawing.Point(552, 182);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(34, 35);
             this.button5.TabIndex = 13;
@@ -183,7 +184,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(372, 181);
+            this.button6.Location = new System.Drawing.Point(592, 182);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(34, 35);
             this.button6.TabIndex = 14;
@@ -193,7 +194,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(291, 140);
+            this.button7.Location = new System.Drawing.Point(511, 141);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(34, 35);
             this.button7.TabIndex = 15;
@@ -203,7 +204,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(331, 140);
+            this.button8.Location = new System.Drawing.Point(551, 141);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(34, 35);
             this.button8.TabIndex = 16;
@@ -213,7 +214,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(372, 140);
+            this.button9.Location = new System.Drawing.Point(592, 141);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(34, 35);
             this.button9.TabIndex = 17;
@@ -223,7 +224,7 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(291, 263);
+            this.button0.Location = new System.Drawing.Point(511, 264);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(34, 35);
             this.button0.TabIndex = 18;
@@ -231,18 +232,18 @@
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button_Click);
             // 
-            // Enter
+            // Igen_Enter
             // 
-            this.Enter.Location = new System.Drawing.Point(332, 263);
-            this.Enter.Name = "Enter";
-            this.Enter.Size = new System.Drawing.Size(74, 35);
-            this.Enter.TabIndex = 19;
-            this.Enter.Text = "Enter";
-            this.Enter.UseVisualStyleBackColor = true;
+            this.Igen_Enter.Location = new System.Drawing.Point(552, 264);
+            this.Igen_Enter.Name = "Igen_Enter";
+            this.Igen_Enter.Size = new System.Drawing.Size(74, 35);
+            this.Igen_Enter.TabIndex = 19;
+            this.Igen_Enter.Text = "Enter";
+            this.Igen_Enter.UseVisualStyleBackColor = true;
             // 
             // buttonX
             // 
-            this.buttonX.Location = new System.Drawing.Point(413, 140);
+            this.buttonX.Location = new System.Drawing.Point(633, 141);
             this.buttonX.Name = "buttonX";
             this.buttonX.Size = new System.Drawing.Size(35, 35);
             this.buttonX.TabIndex = 20;
@@ -253,9 +254,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 480);
+            this.ClientSize = new System.Drawing.Size(683, 480);
             this.Controls.Add(this.buttonX);
-            this.Controls.Add(this.Enter);
+            this.Controls.Add(this.Igen_Enter);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -303,7 +304,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button0;
-        private System.Windows.Forms.Button Enter;
+        private System.Windows.Forms.Button Igen_Enter;
         private System.Windows.Forms.Button buttonX;
     }
 }
