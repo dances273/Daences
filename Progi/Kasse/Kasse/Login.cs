@@ -27,8 +27,12 @@ namespace Kasse
         {
         }
 
+        //Pénztár  betöltése
         private void Cash_button_Click(object sender, EventArgs e)
         {
+            Cash Penztar = new Cash();
+            Penztar.Show(); //Pénztár-grafikai felület megejelenítése
+
             /*OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dances\Documents\Kasse.accdb");
             con.Open();
             MessageBox.Show("Kapcsolódás!");*/
@@ -85,6 +89,7 @@ namespace Kasse
             }*/
         }
 
+        //Bejelentkezés
         private void Login_Button_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -108,6 +113,33 @@ namespace Kasse
                 Cash ch = new Cash();
                 ch.Show();
             
+        }
+
+        //Felhasználó betöltése
+        private void Employee_button_Click(object sender, EventArgs e)
+        {
+            Employe Felhasznalo = new Employe();
+            Felhasznalo.Show(); //Felhasználó-grafikai felület megejelenítése
+        }
+
+        //Számla betöltése
+        private void Account_button_Click(object sender, EventArgs e)
+        {
+            Account Szamla = new Account();
+            Szamla.Show(); //Száma-grafikai felület megejelenítése
+        }
+
+        //Cikk kezelő betöltése
+        private void Product_button_Click(object sender, EventArgs e)
+        {
+            Product Cikk_kezelo = new Product();
+            Cikk_kezelo.Show(); //Cikk kezelő-grafikai felület megejelenítése
+        }
+
+        //Kijelentkezés
+        private void Logout_button_Click(object sender, EventArgs e)
+        {
+
         }
 
 
