@@ -53,3 +53,6 @@ D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Employe.resources
 D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
 D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
 D:\GitHub\Kassza\Progi\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
+d:\Zoltán\Visual studio 2013\RFT\Progi\Kasse\Kasse\bin\Debug\Kasse.exe.config
+d:\Zoltán\Visual studio 2013\RFT\Progi\Kasse\Kasse\obj\Debug\Kasse.exe
+d:\Zoltán\Visual studio 2013\RFT\Progi\Kasse\Kasse\obj\Debug\Kasse.pdb
