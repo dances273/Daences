@@ -12,7 +12,7 @@ namespace Kasse
     public partial class Login : Alap // Öröklődést megnézni!!!
     {
         private AdatbázisQleDb2 odd;
-        public Login():base()
+        public Login()
         {
             InitializeComponent();
             Alap alap = new Alap();
@@ -141,9 +141,9 @@ namespace Kasse
 
     class AdatbázisQleDb2
     {
-        //private OleDbConnection con;
-        //private DataSet dss;
-        //private OleDbDataAdapter oda;
+        private OleDbConnection conn;
+        private DataSet ds;
+        private OleDbDataAdapter oda;
 
         //private AdatbázisQleDb();
         /*private static AdatbázisQleDb sajat;

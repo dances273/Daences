@@ -8,7 +8,7 @@ namespace Kasse
     public partial class Alap : Form
     {
 
-        protected AdatbázisQleDb odb;
+        AdatbázisQleDb odb;
         public Alap()
         {
             InitializeComponent();
