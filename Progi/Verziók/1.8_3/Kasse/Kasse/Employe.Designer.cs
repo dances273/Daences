@@ -38,7 +38,7 @@
             this.Alkalmazott_mutato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Alkalmazott_mutato.Location = new System.Drawing.Point(12, 23);
             this.Alkalmazott_mutato.Name = "Alkalmazott_mutato";
-            this.Alkalmazott_mutato.Size = new System.Drawing.Size(240, 150);
+            this.Alkalmazott_mutato.Size = new System.Drawing.Size(297, 163);
             this.Alkalmazott_mutato.TabIndex = 0;
             // 
             // Employee_regbutton

@@ -21,13 +21,15 @@ namespace Kasse
         {
             protected DataSet ds;
             protected OleDbDataAdapter oda;
+            protected DataTable dt;
+            protected OleDbCommand oc;
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Kasse.accdb" + ";");
 
             //Megkérdezni,hogy működik Singleton
             #region Singleton
 
             public AdatbázisQleDb()
-            {              
+            {
             }
             public static AdatbázisQleDb sajat;
             public static AdatbázisQleDb PeldanySzerez()
@@ -72,7 +74,7 @@ namespace Kasse
                 string Azonosito_nev;
                 try
                 {
-                   // OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Kasse.accdb" + ";");
+                    // OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Kasse.accdb" + ";");
 
                     conn.Open();
                     string lekérdezés = String.Format("Select Azonosito, Jelszo from Alkalmazott_reg where Azonosito = {0} and Jelszo = {1} ", Kódszám, Jelszó);
@@ -80,7 +82,7 @@ namespace Kasse
                     string névmegjelenítés = String.Format("Select Nev from Alkalmazott_reg where Azonosito = {0}", Kódszám);
                     //OleDbDataAdapter odb = new OleDbDataAdapter(névmegjelenítés, conn);
                     ds = new DataSet();//Összes tábla megjelenítése
-                    OleDbCommand oc = new OleDbCommand(lekérdezés, conn);
+                    oc = new OleDbCommand(lekérdezés, conn);
                     OleDbDataReader odr;
                     odr = oc.ExecuteReader();//Adatkeresés
                     int count = 0;
@@ -108,6 +110,26 @@ namespace Kasse
                 }
                 catch (OleDbException ode) { MessageBox.Show(ode.Message); }
                 return "Nincs ilyen felhasználó név!";
+            }
+            public void Alkamazottlekérdező()
+            {
+                DataGridView Megjelenito = new DataGridView();
+                ds = new DataSet();
+                oda = new OleDbDataAdapter();
+                try
+                {
+                    conn.Open();
+                    string query = String.Format("select tagid,nev,cim,telefonszam,email from {0}", conn);
+                    oc = new OleDbCommand(query, conn);
+                    dt = new DataTable();
+                    OleDbDataReader odr;
+                    odr = oc.ExecuteReader();
+                    ds.Tables.Add(dt);
+                    oda.Fill(ds,"Alkalmazott_reg");
+                    Megjelenito.DataSource = dt;
+                }
+                catch (OleDbException ode) { MessageBox.Show(ode.Message); }
+                finally { if (conn.State == ConnectionState.Open) conn.Close(); }
             }
         }
     }
