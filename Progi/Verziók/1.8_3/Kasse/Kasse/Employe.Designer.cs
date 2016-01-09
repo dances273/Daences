@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.Alkalmazott_mutato = new System.Windows.Forms.DataGridView();
             this.Employee_regbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Alkalmazott_mutato)).BeginInit();
@@ -63,6 +64,43 @@
             ((System.ComponentModel.ISupportInitialize)(this.Alkalmazott_mutato)).EndInit();
             this.ResumeLayout(false);
 
+=======
+            this.Alkalmazott_mutato = new System.Windows.Forms.DataGridView();
+            this.Employee_regbutton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Alkalmazott_mutato)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Alkalmazott_mutato
+            // 
+            this.Alkalmazott_mutato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Alkalmazott_mutato.Location = new System.Drawing.Point(12, 23);
+            this.Alkalmazott_mutato.Name = "Alkalmazott_mutato";
+            this.Alkalmazott_mutato.Size = new System.Drawing.Size(297, 163);
+            this.Alkalmazott_mutato.TabIndex = 0;
+            // 
+            // Employee_regbutton
+            // 
+            this.Employee_regbutton.Location = new System.Drawing.Point(328, 23);
+            this.Employee_regbutton.Name = "Employee_regbutton";
+            this.Employee_regbutton.Size = new System.Drawing.Size(75, 23);
+            this.Employee_regbutton.TabIndex = 1;
+            this.Employee_regbutton.Text = "Regisztráció";
+            this.Employee_regbutton.UseVisualStyleBackColor = true;
+            this.Employee_regbutton.Click += new System.EventHandler(this.Employee_regbutton_Click);
+            // 
+            // Employe
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(424, 263);
+            this.Controls.Add(this.Employee_regbutton);
+            this.Controls.Add(this.Alkalmazott_mutato);
+            this.Name = "Employe";
+            this.Text = "Felhasználó";
+            ((System.ComponentModel.ISupportInitialize)(this.Alkalmazott_mutato)).EndInit();
+            this.ResumeLayout(false);
+
+>>>>>>> 95606b58cd537d586ca0e5b953fffb826f6a2914
         }
 
         #endregion
