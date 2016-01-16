@@ -13,71 +13,34 @@ namespace Kasse
 {
     public partial class Employe : Alap
     {
-        //private AdatbázisQleDb odb;
-        public Employe():base()
+        AdatbázisQleDb alap = new AdatbázisQleDb();
+        Employe_reg alkalmazott = (Employe_reg)Application.OpenForms["Employe_reg"];
+        public Employe()
         {
             InitializeComponent();
-            //odb = AdatbázisQleDb.PeldanySzerez();
-            //odb.Kapcsolódás(Environment.CurrentDirectory + @"\Kasse.accdb");
+            Frissítés();
+            Megjelenítő();
         }
 
         private void Employee_regbutton_Click(object sender, EventArgs e)
         {
             Employe_reg Felhasználó_reg = new Employe_reg();
             Felhasználó_reg.Show();
+
+            //06-30/368-59-92 Pista száma
         }
-        /*private void Alkamazottlekérdező(DataGridView Megjelenito)
+        public void Megjelenítő()
         {
-            try
-            {
-                conn.Open();
-                string query = String.Format("select tagid,nev,cim,telefonszam,email from {0}", conn);
-                da = new OleDbDataAdapter(query, conn);
-                dt = new DataTable();
-                da.Fill(dt);
-                Megjelenito.DataSource = dt;
-            }
-            catch (OleDbException ode) { MessageBox.Show(ode.Message); }
-            finally { if (conn.State == ConnectionState.Open) conn.Close(); }
+            alap.Alkamazottlekérdező(Alkalmazott_mutato);
+            Alkalmazott_mutato.Update();
+            Alkalmazott_mutato.Refresh();
+        }
+        public void Frissítés()
+        {
+            Alkalmazott_mutato.Update();
+            Alkalmazott_mutato.Refresh();
         }
     }
-    /*class AdatbázisQleDb
-    {
-        private OleDbConnection conn;
-        private DataSet ds;
-        private OleDbDataAdapter oda;
-
-        //private AdatbázisQleDb();
-        private static AdatbázisQleDb sajat;
-        public static AdatbázisQleDb PeldanySzerez()
-        {
-            if (sajat == null) sajat = new AdatbázisQleDb();
-            return sajat;
-        }
-
-
-        public bool Kapcsolódás(string Adatbázisfájl)
-        {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Adatbázisfájl + ";";
-            try
-            {
-                conn = new OleDbConnection(connectionString);
-                conn.Open();
-                return true;
-            }
-            catch (OleDbException ode)
-            {
-
-                MessageBox.Show(ode.Message);
-                return false;
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
-        }*/
+   
     }
-}
+

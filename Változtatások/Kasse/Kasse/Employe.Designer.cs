@@ -38,12 +38,12 @@
             this.Alkalmazott_mutato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Alkalmazott_mutato.Location = new System.Drawing.Point(12, 23);
             this.Alkalmazott_mutato.Name = "Alkalmazott_mutato";
-            this.Alkalmazott_mutato.Size = new System.Drawing.Size(240, 150);
+            this.Alkalmazott_mutato.Size = new System.Drawing.Size(535, 253);
             this.Alkalmazott_mutato.TabIndex = 0;
             // 
             // Employee_regbutton
             // 
-            this.Employee_regbutton.Location = new System.Drawing.Point(328, 23);
+            this.Employee_regbutton.Location = new System.Drawing.Point(553, 23);
             this.Employee_regbutton.Name = "Employee_regbutton";
             this.Employee_regbutton.Size = new System.Drawing.Size(75, 23);
             this.Employee_regbutton.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 263);
+            this.ClientSize = new System.Drawing.Size(640, 307);
             this.Controls.Add(this.Employee_regbutton);
             this.Controls.Add(this.Alkalmazott_mutato);
             this.Name = "Employe";

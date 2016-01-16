@@ -39,13 +39,14 @@
             this.Account_button = new System.Windows.Forms.Button();
             this.Azonosito_nev = new System.Windows.Forms.Label();
             this.Login_Button = new System.Windows.Forms.Button();
+            this.Kilépés_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(13, 37);
+            this.label1.Location = new System.Drawing.Point(11, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(13, 66);
+            this.label2.Location = new System.Drawing.Point(11, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 1;
@@ -63,14 +64,16 @@
             // 
             // Azonositotext
             // 
-            this.Azonositotext.Location = new System.Drawing.Point(98, 34);
+            this.Azonositotext.Location = new System.Drawing.Point(96, 64);
+            this.Azonositotext.MaxLength = 4;
             this.Azonositotext.Name = "Azonositotext";
             this.Azonositotext.Size = new System.Drawing.Size(100, 20);
             this.Azonositotext.TabIndex = 2;
             // 
             // Passwordtext
             // 
-            this.Passwordtext.Location = new System.Drawing.Point(98, 66);
+            this.Passwordtext.Location = new System.Drawing.Point(96, 96);
+            this.Passwordtext.MaxLength = 4;
             this.Passwordtext.Name = "Passwordtext";
             this.Passwordtext.PasswordChar = '*';
             this.Passwordtext.Size = new System.Drawing.Size(100, 20);
@@ -78,7 +81,7 @@
             // 
             // Employee_button
             // 
-            this.Employee_button.Location = new System.Drawing.Point(244, 21);
+            this.Employee_button.Location = new System.Drawing.Point(242, 51);
             this.Employee_button.Name = "Employee_button";
             this.Employee_button.Size = new System.Drawing.Size(75, 23);
             this.Employee_button.TabIndex = 4;
@@ -89,7 +92,7 @@
             // 
             // Product_button
             // 
-            this.Product_button.Location = new System.Drawing.Point(244, 79);
+            this.Product_button.Location = new System.Drawing.Point(242, 109);
             this.Product_button.Name = "Product_button";
             this.Product_button.Size = new System.Drawing.Size(75, 23);
             this.Product_button.TabIndex = 5;
@@ -100,7 +103,7 @@
             // 
             // Cash_button
             // 
-            this.Cash_button.Location = new System.Drawing.Point(244, 108);
+            this.Cash_button.Location = new System.Drawing.Point(242, 138);
             this.Cash_button.Name = "Cash_button";
             this.Cash_button.Size = new System.Drawing.Size(75, 23);
             this.Cash_button.TabIndex = 6;
@@ -111,7 +114,7 @@
             // 
             // Logout_button
             // 
-            this.Logout_button.Location = new System.Drawing.Point(98, 144);
+            this.Logout_button.Location = new System.Drawing.Point(96, 174);
             this.Logout_button.Name = "Logout_button";
             this.Logout_button.Size = new System.Drawing.Size(100, 23);
             this.Logout_button.TabIndex = 7;
@@ -122,7 +125,7 @@
             // 
             // Account_button
             // 
-            this.Account_button.Location = new System.Drawing.Point(244, 50);
+            this.Account_button.Location = new System.Drawing.Point(242, 80);
             this.Account_button.Name = "Account_button";
             this.Account_button.Size = new System.Drawing.Size(75, 23);
             this.Account_button.TabIndex = 8;
@@ -134,14 +137,14 @@
             // Azonosito_nev
             // 
             this.Azonosito_nev.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Azonosito_nev.Location = new System.Drawing.Point(16, 93);
+            this.Azonosito_nev.Location = new System.Drawing.Point(12, 12);
             this.Azonosito_nev.Name = "Azonosito_nev";
             this.Azonosito_nev.Size = new System.Drawing.Size(222, 23);
             this.Azonosito_nev.TabIndex = 9;
             // 
             // Login_Button
             // 
-            this.Login_Button.Location = new System.Drawing.Point(98, 115);
+            this.Login_Button.Location = new System.Drawing.Point(96, 145);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(100, 23);
             this.Login_Button.TabIndex = 10;
@@ -149,11 +152,22 @@
             this.Login_Button.UseVisualStyleBackColor = true;
             this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
+            // Kilépés_button
+            // 
+            this.Kilépés_button.Location = new System.Drawing.Point(276, 12);
+            this.Kilépés_button.Name = "Kilépés_button";
+            this.Kilépés_button.Size = new System.Drawing.Size(75, 23);
+            this.Kilépés_button.TabIndex = 11;
+            this.Kilépés_button.Text = "Kilépés";
+            this.Kilépés_button.UseVisualStyleBackColor = true;
+            this.Kilépés_button.Click += new System.EventHandler(this.Kilépés_button_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 179);
+            this.ClientSize = new System.Drawing.Size(363, 212);
+            this.Controls.Add(this.Kilépés_button);
             this.Controls.Add(this.Login_Button);
             this.Controls.Add(this.Azonosito_nev);
             this.Controls.Add(this.Account_button);
@@ -185,6 +199,7 @@
         private System.Windows.Forms.Button Account_button;
         private System.Windows.Forms.Label Azonosito_nev;
         private System.Windows.Forms.Button Login_Button;
+        private System.Windows.Forms.Button Kilépés_button;
     }
 }
 

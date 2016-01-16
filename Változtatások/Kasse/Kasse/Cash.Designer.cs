@@ -112,6 +112,7 @@
             this.Tetel_input.Name = "Tetel_input";
             this.Tetel_input.Size = new System.Drawing.Size(376, 20);
             this.Tetel_input.TabIndex = 6;
+            this.Tetel_input.TextChanged += new System.EventHandler(this.Tetel_input_TextChanged);
             // 
             // KP_button
             // 

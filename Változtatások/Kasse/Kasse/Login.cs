@@ -9,20 +9,12 @@ using System.IO;
 
 namespace Kasse
 {
-    public partial class Login : Alap // Öröklődést megnézni!!!
+    public partial class Login : Alap
     {
-        private AdatbázisQleDb2 odd;
+        AdatbázisQleDb alap = new AdatbázisQleDb();
         public Login()
         {
             InitializeComponent();
-            Alap alap = new Alap();
-            
-        }
-
-        private static object AdatbázisQleDb()
-        {
-            
-            throw new NotImplementedException();
         }
         //Pénztár
         private void Cash_button_Click(object sender, EventArgs e)
@@ -36,16 +28,39 @@ namespace Kasse
             int Kódszám = int.Parse(Azonositotext.Text);
             int Jelszó = int.Parse(Passwordtext.Text);
             string Névmegjelenítés = Azonosito_nev.Text;
-            string s= odd.Login(Kódszám, Jelszó, Névmegjelenítés);
-            Azonosito_nev.Text = s;//Kasse.AdatbázisQleDb.Login returned	"Dances"	string 
-
-
-
-            Employee_button.Visible = true;
-            Account_button.Visible = true;
-            Product_button.Visible = true;
-            Cash_button.Visible = true;
-            Logout_button.Visible = true;
+            string s = alap.Login(Kódszám, Jelszó);
+            Azonosito_nev.Text = s;
+            if (Azonosito_nev.Text != "Nincs ilyen felhasználó név!")
+            {
+                Gombok(Kódszám);
+                //Bejelentkezés gomb elrejtése, ha kész a bejelentkezés
+                Login_Button.Visible = false;
+            }
+            else
+            {
+                Azonositotext.Text = "";
+                Passwordtext.Text = "";
+                Login_Button.Visible = true;
+                alap.Lekapcsolódás();
+            }
+        }
+        private void Gombok(int Kódszám)
+        {
+            string beosztas = alap.Beosztas(Kódszám.ToString());
+            switch (beosztas)
+            {
+                case "Gazdaságis":
+                    Employee_button.Visible = true;
+                    Account_button.Visible = true;
+                    goto case "Készletes";
+                case "Készletes":
+                    Product_button.Visible = true;
+                    goto case "Pénztáros";
+                case "Pénztáros":
+                    Cash_button.Visible = true;
+                    Logout_button.Visible = true;
+                    break;
+            }
         }
         //Felhasználó betöltése
         private void Employee_button_Click(object sender, EventArgs e)
@@ -68,168 +83,23 @@ namespace Kasse
         //Kijelentkezés
         private void Logout_button_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            alap.Lekapcsolódás();
 
+            Login_Button.Visible = true;
+            Employee_button.Visible = false;
+            Account_button.Visible = false;
+            Product_button.Visible = false;
+            Cash_button.Visible = false;
+            Logout_button.Visible = false;
 
-    }
-    class AdatbaziskezelésSQL
-    {
-        private SqlConnection conn = new SqlConnection(@"Data Source=Dances-PC\SQLExpress;Initial Catalog=Kasse;Integrated Security=True");
-        private DataSet ds = new DataSet();
-        private DataTable dt = new DataTable();
-        private SqlDataAdapter sda = new SqlDataAdapter();
-        /*public void Login()
-        {
-            /*OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dances\Documents\Kasse.accdb");
-           con.Open();
-           MessageBox.Show("Kapcsolódás!");///Ide Csillagot kell rakni.
-            //Cash ch = new Cash();
-            //ch.Show();
-            SqlConnection conn = new SqlConnection(@"Data Source=Dances-PC\SQLExpress;Initial Catalog=Kasse;Integrated Security=True");
-            conn.Open();//Kapcsolódás a szerverhez
-            ds = new DataSet();//Összes tábla megjelenítése
-            SqlCommand sc = new SqlCommand("Select Azonosito, Jelszo from Login where Azonosito =" + Azonositotext.Text + " and Jelszo =" + Passwordtext.Text + " ", conn);
-            SqlDataReader dr;
-            dr = sc.ExecuteReader();//Adatkeresés
-            int count = 0;
-            while (dr.Read())
-            {
-                count += 1;
-            }
-            if (count == 1)
-            {
-                dr.Close();
-                sda = new SqlDataAdapter("Select Nev from Login where Azonosito=" + Azonositotext.Text, conn);
-                sda.Fill(ds, "Login");
-                Azonosito_nev.Text = ((string)ds.Tables[0].Rows[0]["Nev"]);
-                Cash ch = new Cash();
-                ch.Show();
-            }
-            else if (count > 0)
-            {
-                MessageBox.Show("Dupla jelszó vagy felhasználónév");
-            }
-            else
-            {
-                MessageBox.Show("Felhasználó név vagy jelszó rossz");
-            }
             Azonositotext.Clear();
             Passwordtext.Clear();
             Azonosito_nev.Text = "";
-            /*Cash ch = new Cash();
-            ch.Show();
-            SqlConnection conn = new SqlConnection(@"Data Source=Dances-PC\SQLExpress;Initial Catalog=Kasse;Integrated Security=True");
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Zoltán\Emachines E528 laptop\Zoltán\Kasse\Kasse\Kasse.mdf;Integrated Security=True;");
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("Select * from Login where Azonosito =" + Azonositotext.Text + " and Jelszo =" + Passwordtext.Text + " ", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "8998")
-            {
-                this.Hide();
-                Cash ch1 = new Cash();
-                ch1.Show();
-            }
-            else
-            {
-                MessageBox.Show("Rossz Jelszó vagy Felhasználó név!");
-            }
-         }*/
-    }
-
-
-    class AdatbázisQleDb2
-    {
-        private OleDbConnection conn;
-        private DataSet ds;
-        private OleDbDataAdapter oda;
-
-        //private AdatbázisQleDb();
-        /*private static AdatbázisQleDb sajat;
-        public static AdatbázisQleDb PeldanySzerez()
-        {
-            if (sajat == null) sajat = new AdatbázisQleDb();
-            return sajat;
-        }*/
-
-
-        /*public bool Kapcsolódás(string Adatbázisfájl)
-        {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Adatbázisfájl + ";";
-            try
-            {
-                conn = new OleDbConnection(connectionString);
-                conn.Open();
-                return true;
-            }
-            catch (OleDbException ode)
-            {
-
-                MessageBox.Show(ode.Message);
-                return false;
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
-        }*/
-        public string Login(int Azonosito, int Jelszo, string Azonosito_nev)
-        {
-            try
-            {
-                conn.Open();
-                string lekérdezés = String.Format("Select Azonosito, Jelszo from Alkalmazott_reg where Azonosito = {0} and Jelszo = {1} ", Azonosito, Jelszo);
-                //oda = new OleDbDataAdapter(lekérdezés, conn);
-                string névmegjelenítés = String.Format("Select Nev from Alkalmazott_reg where Azonosito = {0}", Azonosito);
-                //OleDbDataAdapter odb = new OleDbDataAdapter(névmegjelenítés, conn);
-                ds = new DataSet();//Összes tábla megjelenítése
-                OleDbCommand oc = new OleDbCommand(lekérdezés, conn);
-                OleDbDataReader odr;
-                odr = oc.ExecuteReader();//Adatkeresés
-                int count = 0;
-                while (odr.Read())
-                {
-                    count += 1;
-                }
-                if (count == 1)
-                {
-                    odr.Close();
-                    oda = new OleDbDataAdapter(névmegjelenítés, conn);
-                    oda.Fill(ds, "Alkalmazott_reg");
-                    Azonosito_nev = ((string)ds.Tables[0].Rows[0]["Nev"]);
-                    return Azonosito_nev;
-                }
-                else if (count > 0)
-                {
-                    MessageBox.Show("Dupla jelszó vagy felhasználónév");
-                }
-                else
-                {
-                    MessageBox.Show("Felhasználó név vagy jelszó rossz");
-                }
-
-            }
-            catch (OleDbException ode) { MessageBox.Show(ode.Message); }
-            return "Nincs ilyen felhasználó név!";
-            //finally { if (conn.State == ConnectionState.Open) conn.Close(); }
-
-            //ds.Tables["Login"].Rows[0]["Azonosito"];
-            //SqlDataAdapter dc = new SqlDataAdapter("Select Nev from Login where Azonosito=" + Azonositotext.Text, conn);
-            //dc.Fill(ds, "Login");
-            //Azonosito_nev.Text = ((string)ds.Tables[0].Rows[0]["Nev"]);
-
-            /*
-
-
-            sda = new SqlDataAdapter("Select Nev from Login where Azonosito=" + Azonositotext.Text, conn);
-            sda.Fill(ds, "Login");
-            Azonosito_nev.Text = ((string)ds.Tables[0].Rows[0]["Nev"]);/*/
-
         }
-
+        //Kilépés
+        private void Kilépés_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

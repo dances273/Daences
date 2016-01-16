@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Kasse
 {
-    public partial class Account : Form
+    public partial class Account : Alap
     {
+        AdatbázisQleDb alap = new AdatbázisQleDb();
         public Account()
         {
             InitializeComponent();
+            alap.SzámlaMegtekintő(Szamla_mutato);
+        }
+
+        private void Account_regbutton_Click(object sender, EventArgs e)
+        {
+            Account_reg Számla_reg = new Account_reg();
+            Számla_reg.Show();
         }
     }
 }

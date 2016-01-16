@@ -12,10 +12,10 @@ namespace Kasse
 {
     public partial class Cash : Alap
     {
+        AdatbázisQleDb alap = new AdatbázisQleDb();
         public Cash()
         {
             InitializeComponent();
-            textBox1.Text = "Hello" + Environment.NewLine+"Szia!";
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -37,5 +37,12 @@ namespace Kasse
                 //this.edited_input_delete_last_char();
             }
         }
+
+        private void Tetel_input_TextChanged(object sender, EventArgs e)
+        {
+            string termek = alap.Terkmékkereső(Tetel_input.Text,textBox1.Text);
+            textBox1.Text = termek + Environment.NewLine;
+        }
+
     }
 }
