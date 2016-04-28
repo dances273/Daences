@@ -227,3 +227,6 @@ e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Product.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
+d:\Zoltán\Visual studio 2013\RFT\Progi\Verziók\1.20\Kasse\Kasse\bin\Debug\Kasse.exe.config
+d:\Zoltán\Visual studio 2013\RFT\Progi\Verziók\1.20\Kasse\Kasse\obj\Debug\Kasse.exe
+d:\Zoltán\Visual studio 2013\RFT\Progi\Verziók\1.20\Kasse\Kasse\obj\Debug\Kasse.pdb

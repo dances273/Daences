@@ -227,3 +227,20 @@ e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Product.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
 e:\1.20\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\bin\Debug\Kasse.exe.config
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.exe
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.pdb
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\bin\Debug\Kasse.exe
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\bin\Debug\Kasse.pdb
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.csprojResolveAssemblyReference.cache
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Account.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Account_reg.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Alap.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Cash.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Employe_reg.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Login.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Employe.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Product.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
+d:\Zoltán\Visual studio 2013\RFT\Végleges Verzió\V.1.0\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
