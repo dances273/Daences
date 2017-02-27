@@ -57,6 +57,11 @@
             this.uj_button = new System.Windows.Forms.Button();
             this.fizetes_button = new System.Windows.Forms.Button();
             this.C_button = new System.Windows.Forms.Button();
+            this.Szamla_button = new System.Windows.Forms.Button();
+            this.Tesco_button = new System.Windows.Forms.Button();
+            this.Kulso_button = new System.Windows.Forms.Button();
+            this.Erzsebet_button = new System.Windows.Forms.Button();
+            this.Fizeto_eszkozok_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Fizetendotext
@@ -103,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(12, 427);
+            this.label1.Location = new System.Drawing.Point(12, 529);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 5;
@@ -112,7 +117,7 @@
             // Tetel_input
             // 
             this.Tetel_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Tetel_input.Location = new System.Drawing.Point(15, 447);
+            this.Tetel_input.Location = new System.Drawing.Point(15, 549);
             this.Tetel_input.MaxLength = 24;
             this.Tetel_input.Name = "Tetel_input";
             this.Tetel_input.Size = new System.Drawing.Size(126, 26);
@@ -120,9 +125,9 @@
             // 
             // KP_button
             // 
-            this.KP_button.Location = new System.Drawing.Point(510, 97);
+            this.KP_button.Location = new System.Drawing.Point(521, 170);
             this.KP_button.Name = "KP_button";
-            this.KP_button.Size = new System.Drawing.Size(75, 23);
+            this.KP_button.Size = new System.Drawing.Size(96, 45);
             this.KP_button.TabIndex = 7;
             this.KP_button.Text = "KP";
             this.KP_button.UseVisualStyleBackColor = true;
@@ -131,9 +136,9 @@
             // Card_button
             // 
             this.Card_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Card_button.Location = new System.Drawing.Point(592, 96);
+            this.Card_button.Location = new System.Drawing.Point(623, 170);
             this.Card_button.Name = "Card_button";
-            this.Card_button.Size = new System.Drawing.Size(75, 23);
+            this.Card_button.Size = new System.Drawing.Size(96, 45);
             this.Card_button.TabIndex = 8;
             this.Card_button.Text = "Kártya";
             this.Card_button.UseVisualStyleBackColor = true;
@@ -141,9 +146,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 214);
+            this.button1.Location = new System.Drawing.Point(572, 374);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 35);
+            this.button1.Size = new System.Drawing.Size(45, 45);
             this.button1.TabIndex = 9;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -151,9 +156,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(551, 214);
+            this.button2.Location = new System.Drawing.Point(623, 374);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(34, 35);
+            this.button2.Size = new System.Drawing.Size(45, 45);
             this.button2.TabIndex = 10;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -161,9 +166,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(591, 214);
+            this.button3.Location = new System.Drawing.Point(674, 374);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 35);
+            this.button3.Size = new System.Drawing.Size(45, 45);
             this.button3.TabIndex = 11;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -171,9 +176,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(510, 173);
+            this.button4.Location = new System.Drawing.Point(572, 323);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(34, 35);
+            this.button4.Size = new System.Drawing.Size(45, 45);
             this.button4.TabIndex = 12;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -181,9 +186,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(551, 173);
+            this.button5.Location = new System.Drawing.Point(623, 323);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(34, 35);
+            this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 13;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -191,9 +196,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(591, 173);
+            this.button6.Location = new System.Drawing.Point(674, 323);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(34, 35);
+            this.button6.Size = new System.Drawing.Size(45, 45);
             this.button6.TabIndex = 14;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -201,9 +206,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(510, 132);
+            this.button7.Location = new System.Drawing.Point(572, 272);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(34, 35);
+            this.button7.Size = new System.Drawing.Size(45, 45);
             this.button7.TabIndex = 15;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -211,9 +216,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(550, 132);
+            this.button8.Location = new System.Drawing.Point(623, 272);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(34, 35);
+            this.button8.Size = new System.Drawing.Size(45, 45);
             this.button8.TabIndex = 16;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -221,9 +226,9 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(591, 132);
+            this.button9.Location = new System.Drawing.Point(674, 272);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(34, 35);
+            this.button9.Size = new System.Drawing.Size(45, 45);
             this.button9.TabIndex = 17;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
@@ -231,9 +236,9 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(510, 255);
+            this.button0.Location = new System.Drawing.Point(572, 425);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(34, 35);
+            this.button0.Size = new System.Drawing.Size(45, 45);
             this.button0.TabIndex = 18;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -241,9 +246,9 @@
             // 
             // Igen_Enter
             // 
-            this.Igen_Enter.Location = new System.Drawing.Point(551, 255);
+            this.Igen_Enter.Location = new System.Drawing.Point(623, 425);
             this.Igen_Enter.Name = "Igen_Enter";
-            this.Igen_Enter.Size = new System.Drawing.Size(119, 35);
+            this.Igen_Enter.Size = new System.Drawing.Size(96, 45);
             this.Igen_Enter.TabIndex = 19;
             this.Igen_Enter.Text = "Összesen/ Enter";
             this.Igen_Enter.UseVisualStyleBackColor = true;
@@ -251,9 +256,9 @@
             // 
             // buttonX
             // 
-            this.buttonX.Location = new System.Drawing.Point(632, 132);
+            this.buttonX.Location = new System.Drawing.Point(674, 221);
             this.buttonX.Name = "buttonX";
-            this.buttonX.Size = new System.Drawing.Size(35, 35);
+            this.buttonX.Size = new System.Drawing.Size(45, 45);
             this.buttonX.TabIndex = 20;
             this.buttonX.Text = "X";
             this.buttonX.UseVisualStyleBackColor = true;
@@ -266,14 +271,14 @@
             this.termekek_listBox1.ItemHeight = 25;
             this.termekek_listBox1.Location = new System.Drawing.Point(15, 56);
             this.termekek_listBox1.Name = "termekek_listBox1";
-            this.termekek_listBox1.Size = new System.Drawing.Size(398, 354);
+            this.termekek_listBox1.Size = new System.Drawing.Size(398, 454);
             this.termekek_listBox1.TabIndex = 21;
             // 
             // Torles_button10
             // 
-            this.Torles_button10.Location = new System.Drawing.Point(631, 173);
+            this.Torles_button10.Location = new System.Drawing.Point(623, 221);
             this.Torles_button10.Name = "Torles_button10";
-            this.Torles_button10.Size = new System.Drawing.Size(36, 35);
+            this.Torles_button10.Size = new System.Drawing.Size(45, 45);
             this.Torles_button10.TabIndex = 22;
             this.Torles_button10.Text = "Del";
             this.Torles_button10.UseVisualStyleBackColor = true;
@@ -282,7 +287,7 @@
             // fizetett_textBox
             // 
             this.fizetett_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fizetett_textBox.Location = new System.Drawing.Point(512, 325);
+            this.fizetett_textBox.Location = new System.Drawing.Point(561, 477);
             this.fizetett_textBox.Name = "fizetett_textBox";
             this.fizetett_textBox.ReadOnly = true;
             this.fizetett_textBox.Size = new System.Drawing.Size(158, 26);
@@ -291,7 +296,7 @@
             // visszajaro_textBox
             // 
             this.visszajaro_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.visszajaro_textBox.Location = new System.Drawing.Point(512, 357);
+            this.visszajaro_textBox.Location = new System.Drawing.Point(561, 509);
             this.visszajaro_textBox.Name = "visszajaro_textBox";
             this.visszajaro_textBox.ReadOnly = true;
             this.visszajaro_textBox.Size = new System.Drawing.Size(158, 26);
@@ -301,7 +306,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(448, 331);
+            this.label2.Location = new System.Drawing.Point(497, 483);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 25;
@@ -311,7 +316,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(429, 363);
+            this.label3.Location = new System.Drawing.Point(478, 515);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 15);
             this.label3.TabIndex = 26;
@@ -319,9 +324,9 @@
             // 
             // uj_button
             // 
-            this.uj_button.Location = new System.Drawing.Point(510, 56);
+            this.uj_button.Location = new System.Drawing.Point(521, 119);
             this.uj_button.Name = "uj_button";
-            this.uj_button.Size = new System.Drawing.Size(157, 35);
+            this.uj_button.Size = new System.Drawing.Size(198, 45);
             this.uj_button.TabIndex = 27;
             this.uj_button.Text = "Új";
             this.uj_button.UseVisualStyleBackColor = true;
@@ -329,7 +334,7 @@
             // 
             // fizetes_button
             // 
-            this.fizetes_button.Location = new System.Drawing.Point(512, 389);
+            this.fizetes_button.Location = new System.Drawing.Point(561, 541);
             this.fizetes_button.Name = "fizetes_button";
             this.fizetes_button.Size = new System.Drawing.Size(155, 35);
             this.fizetes_button.TabIndex = 28;
@@ -339,19 +344,71 @@
             // 
             // C_button
             // 
-            this.C_button.Location = new System.Drawing.Point(631, 214);
+            this.C_button.Location = new System.Drawing.Point(572, 221);
             this.C_button.Name = "C_button";
-            this.C_button.Size = new System.Drawing.Size(36, 35);
+            this.C_button.Size = new System.Drawing.Size(45, 45);
             this.C_button.TabIndex = 29;
             this.C_button.Text = "C";
             this.C_button.UseVisualStyleBackColor = true;
             this.C_button.Click += new System.EventHandler(this.C_button_Click);
             // 
+            // Szamla_button
+            // 
+            this.Szamla_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Szamla_button.Location = new System.Drawing.Point(521, 272);
+            this.Szamla_button.Name = "Szamla_button";
+            this.Szamla_button.Size = new System.Drawing.Size(45, 45);
+            this.Szamla_button.TabIndex = 30;
+            this.Szamla_button.Text = "Szám-la";
+            this.Szamla_button.UseVisualStyleBackColor = true;
+            // 
+            // Tesco_button
+            // 
+            this.Tesco_button.Location = new System.Drawing.Point(521, 323);
+            this.Tesco_button.Name = "Tesco_button";
+            this.Tesco_button.Size = new System.Drawing.Size(45, 45);
+            this.Tesco_button.TabIndex = 31;
+            this.Tesco_button.Text = "Tesco";
+            this.Tesco_button.UseVisualStyleBackColor = true;
+            // 
+            // Kulso_button
+            // 
+            this.Kulso_button.Location = new System.Drawing.Point(521, 374);
+            this.Kulso_button.Name = "Kulso_button";
+            this.Kulso_button.Size = new System.Drawing.Size(45, 45);
+            this.Kulso_button.TabIndex = 32;
+            this.Kulso_button.Text = "Külső";
+            this.Kulso_button.UseVisualStyleBackColor = true;
+            // 
+            // Erzsebet_button
+            // 
+            this.Erzsebet_button.Location = new System.Drawing.Point(521, 425);
+            this.Erzsebet_button.Name = "Erzsebet_button";
+            this.Erzsebet_button.Size = new System.Drawing.Size(45, 45);
+            this.Erzsebet_button.TabIndex = 33;
+            this.Erzsebet_button.Text = "Erzsébet";
+            this.Erzsebet_button.UseVisualStyleBackColor = true;
+            // 
+            // Fizeto_eszkozok_button
+            // 
+            this.Fizeto_eszkozok_button.Location = new System.Drawing.Point(521, 221);
+            this.Fizeto_eszkozok_button.Name = "Fizeto_eszkozok_button";
+            this.Fizeto_eszkozok_button.Size = new System.Drawing.Size(45, 45);
+            this.Fizeto_eszkozok_button.TabIndex = 34;
+            this.Fizeto_eszkozok_button.Text = "Fiz. Eszk.";
+            this.Fizeto_eszkozok_button.UseVisualStyleBackColor = true;
+            this.Fizeto_eszkozok_button.Click += new System.EventHandler(this.Fizeto_eszkozok_button_Click);
+            // 
             // Cash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 480);
+            this.ClientSize = new System.Drawing.Size(731, 587);
+            this.Controls.Add(this.Fizeto_eszkozok_button);
+            this.Controls.Add(this.Erzsebet_button);
+            this.Controls.Add(this.Kulso_button);
+            this.Controls.Add(this.Tesco_button);
+            this.Controls.Add(this.Szamla_button);
             this.Controls.Add(this.C_button);
             this.Controls.Add(this.fizetes_button);
             this.Controls.Add(this.uj_button);
@@ -419,5 +476,10 @@
         private System.Windows.Forms.Button uj_button;
         private System.Windows.Forms.Button fizetes_button;
         private System.Windows.Forms.Button C_button;
+        private System.Windows.Forms.Button Szamla_button;
+        private System.Windows.Forms.Button Tesco_button;
+        private System.Windows.Forms.Button Kulso_button;
+        private System.Windows.Forms.Button Erzsebet_button;
+        private System.Windows.Forms.Button Fizeto_eszkozok_button;
     }
 }

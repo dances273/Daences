@@ -13,6 +13,7 @@ namespace Kasse
     public partial class Cash : Alap
     {
         AdatbázisQleDb alap = new AdatbázisQleDb();
+        Fizeto Fiz = new Fizeto();
         List<Termekek> Termek_lista = new List<Termekek>();
         public Cash()
         {
@@ -65,7 +66,6 @@ namespace Kasse
 
 
         }
-
 
         private void Torles_button10_Click(object sender, EventArgs e) //Melyik az amelyik törlődik?? Sztornó miatt...
         {
@@ -190,6 +190,7 @@ namespace Kasse
         {
             try
             {
+                Fiz.KP = Convert.ToUInt32(Tetel_input.Text) - Convert.ToUInt32(fizetett_textBox.Text);
                 visszajaro_textBox.Text = (Convert.ToInt32(Tetel_input.Text) - Convert.ToInt32(fizetett_textBox.Text)).ToString();
                 Logger.Info(string.Format("Fizetendő:{0}, Kerekített fizetendő összeg:{1},Visszajáró:{2}", Fizetendotext.Text, fizetett_textBox.Text,visszajaro_textBox.Text),"Fizetés Gomb");
             }
@@ -230,6 +231,20 @@ namespace Kasse
             {
                 MessageBox.Show("HIBA: Alaphelyzetbe állítás sikertelen!");
                 Logger.Warning("Alaphelyzetbe állítás sikertelen!","Alaphelyzet");
+            }
+        }
+
+        private void Fizeto_eszkozok_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Multi ml = new Multi();
+                ml.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("HIBA: Fizetési eszközök!");
+                Logger.Error("Fizetési eszközök megjelenítési hiba!", "Multi ablak betöltési hiba!");
             }
         }
     }

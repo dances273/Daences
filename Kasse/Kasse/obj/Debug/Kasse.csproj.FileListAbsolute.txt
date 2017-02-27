@@ -264,3 +264,4 @@ D:\Zoltán\Kasse\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
 D:\Zoltán\Kasse\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
 D:\Zoltán\Kasse\Kasse\Kasse\bin\Debug\Kasse.exe
 D:\Zoltán\Kasse\Kasse\Kasse\bin\Debug\Kasse.pdb
+D:\Zoltán\Kasse\Kasse\Kasse\obj\Debug\Kasse.Multi.resources

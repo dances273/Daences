@@ -385,7 +385,7 @@ namespace Kasse
                 catch (OleDbException ode) { MessageBox.Show(ode.Message); Logger.Error(ode.Message, "Alkalmazott megjelenítő hiba"); }
                 finally { Lekapcsolódás(); }
             }
-            
+
             public void SzámlaMegtekintő(DataGridView Megjelenito)
             {
                 try
@@ -477,7 +477,7 @@ namespace Kasse
                     int i = 0;
                     while (odr.Read())
                     {
-                        
+
                         string orszag = odr.GetString(0);
                         if (orszag.Length == 9)
                         {
@@ -493,7 +493,7 @@ namespace Kasse
                                 return beszallito;
                             }
                         }
-                        else if (orszag.Length == 3 && orszag==Vonalkód)
+                        else if (orszag.Length == 3 && orszag == Vonalkód)
                         {
                             string névmegjelenítés = String.Format("SELECT Ország FROM EAN_13 WHERE Kód = " + j + "{0}" + j + "", Vonalkód);
                             oda = new OleDbDataAdapter(névmegjelenítés, conn);
@@ -515,7 +515,83 @@ namespace Kasse
 
         }
 
+        public class Fizeto
+        {
+            private uint Kp;
 
+            public uint KP
+            {
+                get { return Kp; }
+                set { Kp = value + Kp; }
+            }
+            private uint EFTPos;
+
+            public uint EFTPOS
+            {
+                get { return EFTPos; }
+                set { EFTPos = value + EFTPos; }
+            }
+            private uint Tesco_utal;
+
+            public uint Tesco_utalvany
+            {
+                get { return Tesco_utal; }
+                set { Tesco_utal = value + Tesco_utal; }
+            }
+            private uint Kulso_utal;
+
+            public uint Kulso_utalvany
+            {
+                get { return Kulso_utal; }
+                set { Kulso_utal = value + Kulso_utal; }
+            }
+            private uint Erzsebet_utal;
+
+            public uint Erzsebet_utalvany
+            {
+                get { return Erzsebet_utal; }
+                set { Erzsebet_utal = value + Erzsebet_utal; }
+            }
+
+            private uint Kupon98;
+
+            public uint Kupon_98
+            {
+                get { return Kupon98; }
+                set { Kupon98 = value + Kupon98; }
+            }
+            private uint Kupon99;
+
+            public uint Kupon_99
+            {
+                get { return Kupon99; }
+                set { Kupon99 = value + Kupon99; }
+            }
+            private uint uvegblokk;
+
+            public uint Uvegblokk
+            {
+                get { return uvegblokk; }
+                set { uvegblokk = value + uvegblokk; }
+            }
+            public List<string> Fiz_list = new List<string>();
+            public List<string> feltolt()
+            {
+                if (Fiz_list.Count == 0)
+                {
+                    Fiz_list.Add(Kp.ToString());
+                    Fiz_list.Add(EFTPos.ToString());
+                    Fiz_list.Add(Tesco_utal.ToString());
+                    Fiz_list.Add(Kulso_utal.ToString());
+                    Fiz_list.Add(Kupon98.ToString());
+                    Fiz_list.Add(Kupon99.ToString());
+                    Fiz_list.Add(uvegblokk.ToString());
+                    return Fiz_list;
+                }
+                return Fiz_list;
+            }
+
+        }
 
         public class Termekek
         {
