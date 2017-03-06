@@ -42,8 +42,7 @@ namespace Kasse
         {
             try
             {
-                Szállítóikód();
-                alap.Termékfelvitel(Vonalkod_text.Text, Gyorskod_text.Text, Termek_nev_text.Text, Szallito_text.Text, Szallito_kod_text.Text, Kategoria_text.Text, int.Parse(Mennyisegi_ar_text.Text), Mennyisegi_egyseg_text.Text + "/" + Mennyisegi_egyseg_comboBox.Text, Kiszereles_text.Text + "/" + Kiszereles_comboBox.Text, int.Parse(Eladási_ar_text.Text), double.Parse(Netto_ar_text.Text), double.Parse(Akcios_ar_text.Text), Datum_text.Value, Felnőttartalom.Checked, Áfa);
+                alap.Termékfelvitel(Vonalkod_text.Text, Gyorskod_text.Text, Termek_nev_text.Text, Szallito_text.Text, Szallito_kod_text.Text,Szallito_orszag_text.Text, Kategoria_text.Text, int.Parse(Mennyisegi_ar_text.Text), Mennyisegi_egyseg_text.Text + "/" + Mennyisegi_egyseg_comboBox.Text, Kiszereles_text.Text + "/" + Kiszereles_comboBox.Text, int.Parse(Eladási_ar_text.Text), double.Parse(Netto_ar_text.Text), double.Parse(Akcios_ar_text.Text), Datum_text.Value, Felnőttartalom.Checked, Áfa);
                 this.Close();
             }
             catch (Exception)
@@ -55,9 +54,18 @@ namespace Kasse
         }
         private void Szállítóikód()//Keresés listában Lista feltöltése
         {
-            string kod = Vonalkod_text.Text;
-            Szallito_orszag_text.Text=alap.Ország(kod.Substring(0,3));
-            Szallito_kod_text.Text = kod.Substring(3, 5);//0-tól kezdődik
+            try
+            {
+                string kod = Vonalkod_text.Text;
+                Szallito_orszag_text.Text = alap.Ország(kod.Substring(0, 3));
+                Szallito_kod_text.Text = kod.Substring(3, 5);//0-tól kezdődik
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("HIBA: Szállítói kód!");
+            }
+            
 
         }
 

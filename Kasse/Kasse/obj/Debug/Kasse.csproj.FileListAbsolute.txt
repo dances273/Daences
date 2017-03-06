@@ -265,3 +265,23 @@ D:\Zoltán\Kasse\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache
 D:\Zoltán\Kasse\Kasse\Kasse\bin\Debug\Kasse.exe
 D:\Zoltán\Kasse\Kasse\Kasse\bin\Debug\Kasse.pdb
 D:\Zoltán\Kasse\Kasse\Kasse\obj\Debug\Kasse.Multi.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\bin\Debug\Kasse.exe.config
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.csproj.ResolveComReference.cache
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.exe
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.pdb
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\bin\Debug\Kasse.exe
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\bin\Debug\Kasse.pdb
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.csprojResolveAssemblyReference.cache
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Account.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Account_reg.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Alap.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Cash.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Employe_reg.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Login.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Employe.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Multi.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Product.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Product_reg.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.Properties.Resources.resources
+C:\Users\Dances\Documents\Visual Studio 2013\Projects\Kasse\Kasse\obj\Debug\Kasse.csproj.GenerateResource.Cache

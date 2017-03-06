@@ -35,7 +35,7 @@
             // Fiz_listBox
             // 
             this.Fiz_listBox.FormattingEnabled = true;
-            this.Fiz_listBox.Location = new System.Drawing.Point(13, 13);
+            this.Fiz_listBox.Location = new System.Drawing.Point(12, 12);
             this.Fiz_listBox.Name = "Fiz_listBox";
             this.Fiz_listBox.Size = new System.Drawing.Size(304, 355);
             this.Fiz_listBox.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 526);
+            this.ClientSize = new System.Drawing.Size(328, 526);
             this.Controls.Add(this.Szam_textBox);
             this.Controls.Add(this.Fiz_listBox);
             this.Name = "Multi";

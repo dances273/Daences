@@ -429,7 +429,7 @@ namespace Kasse
                 catch (OleDbException ode) { MessageBox.Show(ode.Message); Logger.Error(ode.Message, "Tagfelvételi hiba"); }
                 finally { Lekapcsolódás(); }
             }
-            public void Termékfelvitel(string Vonalkod, string Gyorskód, string Név, string Szállító, string Szállítóikód, string Kategória, int Menny_érték, string Menny_egység, string Kiszerelés, int Eladási_ár, double Nettó, double Akció, DateTime datum, bool Tiltott, string Áfa)
+            public void Termékfelvitel(string Vonalkod, string Gyorskód, string Név, string Szállító, string Szállítóikód,string Beszallito, string Kategória, int Menny_érték, string Menny_egység, string Kiszerelés, int Eladási_ár, double Nettó, double Akció, DateTime datum, bool Tiltott, string Áfa)
             {
                 try
                 {
@@ -438,7 +438,7 @@ namespace Kasse
                     {
                         Gyorskód = "-1";
                     }
-                    string query = String.Format("INSERT INTO Termek_reg (Vonalkod, Gyorskód, Nev, Szallito, Szallitoi_kod, Kategoria, Mennyisegi_ar, Mennyisegi_egyseg, Kiszereles, Eladasi_ar, Netto_ar, Akcios_ar, Datum, Tiltott_lista, Áfa) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}',{9},{10},{11},'{12}','{13}','{14}');", Vonalkod, Gyorskód, Név, Szállító, Szállítóikód, Kategória, Menny_érték, Menny_egység, Kiszerelés, Convert.ToInt32(Eladási_ár), Convert.ToInt32(Nettó), Convert.ToInt32(Akció), Convert.ToString(datum), Convert.ToString(Tiltott), Áfa);
+                    string query = String.Format("INSERT INTO Termek_reg (Vonalkod, Gyorskód, Nev, Szallito, Szallitoi_kod,Beszallito_orszag, Kategoria, Mennyisegi_ar, Mennyisegi_egyseg, Kiszereles, Eladasi_ar, Netto_ar, Akcios_ar, Datum, Tiltott_lista, Áfa) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}',{7},'{8}','{9}',{10},{11},{12},'{13}','{14}','{15}');", Vonalkod, Gyorskód, Név, Szállító, Szállítóikód, Beszallito,Kategória, Menny_érték, Menny_egység, Kiszerelés, Convert.ToInt32(Eladási_ár), Convert.ToDouble(Nettó), Convert.ToDouble(Akció), Convert.ToString(datum), Convert.ToString(Tiltott), Áfa);
                     oda = new OleDbDataAdapter(query, conn);
                     ds = new DataSet();
                     oda.Fill(ds);
@@ -499,7 +499,7 @@ namespace Kasse
                             oda = new OleDbDataAdapter(névmegjelenítés, conn);
                             ds = new DataSet();
                             oda.Fill(ds, "EAN_13");
-                            beszallito = ((string)ds.Tables[0].Rows[i]["Ország"]);
+                            beszallito = ds.Tables[0].Rows[0]["Ország"].ToString();
                             return beszallito;
                         }
                         i++;
@@ -574,18 +574,18 @@ namespace Kasse
                 get { return uvegblokk; }
                 set { uvegblokk = value + uvegblokk; }
             }
-            public List<string> Fiz_list = new List<string>();
+            List<string> Fiz_list = new List<string>();
             public List<string> feltolt()
             {
                 if (Fiz_list.Count == 0)
                 {
-                    Fiz_list.Add(Kp.ToString());
-                    Fiz_list.Add(EFTPos.ToString());
-                    Fiz_list.Add(Tesco_utal.ToString());
-                    Fiz_list.Add(Kulso_utal.ToString());
-                    Fiz_list.Add(Kupon98.ToString());
-                    Fiz_list.Add(Kupon99.ToString());
-                    Fiz_list.Add(uvegblokk.ToString());
+                    Fiz_list.Add("Készpénz");
+                    Fiz_list.Add("Bankkártya");
+                    Fiz_list.Add("Tesco utalvány");
+                    Fiz_list.Add("Külső utalvány");
+                    Fiz_list.Add("Kupon98");
+                    Fiz_list.Add("Kupon99");
+                    Fiz_list.Add("Üveg Blokk");
                     return Fiz_list;
                 }
                 return Fiz_list;

@@ -23,12 +23,12 @@ namespace Kasse
         {
             int index = Fiz_listBox.SelectedIndex;
             Fiz_lista.AddRange(fiz.feltolt());
-            Fiz_listBox.DataSource= fiz.Fiz_list;
+            Fiz_listBox.DataSource= Fiz_lista;
 
-            Szam_textBox.Text = Fiz_listBox.SelectedIndex.ToString();
             if (index > 0)
             {
                 Fiz_listBox.SetSelected(index, true);
+                Szam_textBox.Text = index.ToString();
             }
         }
     }
