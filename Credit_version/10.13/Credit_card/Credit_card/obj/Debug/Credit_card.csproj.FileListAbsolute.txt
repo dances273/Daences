@@ -1,0 +1,12 @@
+F:\Credit_card\Credit_card\bin\Debug\Form1.resx
+F:\Credit_card\Credit_card\bin\Debug\Form1.cs
+F:\Credit_card\Credit_card\bin\Debug\Form1.Designer.cs
+F:\Credit_card\Credit_card\bin\Debug\Program.cs
+F:\Credit_card\Credit_card\bin\Debug\Credit_card.exe
+F:\Credit_card\Credit_card\bin\Debug\Credit_card.pdb
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.csprojResolveAssemblyReference.cache
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.Form1.resources
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.Properties.Resources.resources
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.csproj.GenerateResource.Cache
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.exe
+F:\Credit_card\Credit_card\obj\Debug\Credit_card.pdb

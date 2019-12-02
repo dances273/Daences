@@ -1,0 +1,55 @@
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\bin\Debug\Credit_card.exe
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\bin\Debug\Credit_card.pdb
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Properties.Resources.resources
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csproj.GenerateResource.Cache
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+D:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Form1.resources
+f:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+f:\Zoltán\visual studio 2010\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\bin\Debug\Credit_card.exe
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\bin\Debug\Credit_card.pdb
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csprojResolveAssemblyReference.cache
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Form1.resources
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Properties.Resources.resources
+d:\Zoltán\Visual studio 2013\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csproj.GenerateResource.Cache
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Form1.resx
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Form1.cs
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Form1.Designer.cs
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Credit_card.exe
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Credit_card.pdb
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csprojResolveAssemblyReference.cache
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Form1.resources
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Properties.Resources.resources
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csproj.GenerateResource.Cache
+C:\Users\Daences\Documents\Visual Studio 2013\Projects\Credit_card\Credit_card\bin\Debug\Program.cs
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+F:\Credit_card\Credit_card\bin\x86\Debug\Form1.resx
+F:\Credit_card\Credit_card\bin\x86\Debug\Form1.cs
+F:\Credit_card\Credit_card\bin\x86\Debug\Form1.Designer.cs
+F:\Credit_card\Credit_card\bin\x86\Debug\Program.cs
+F:\Credit_card\Credit_card\bin\x86\Debug\Credit_card.exe
+F:\Credit_card\Credit_card\bin\x86\Debug\Credit_card.pdb
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csprojResolveAssemblyReference.cache
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Form1.resources
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Properties.Resources.resources
+F:\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csproj.GenerateResource.Cache
+D:\32GB pendrive\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+D:\32GB pendrive\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.exe
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.pdb
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Form1.resx
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Form1.cs
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Form1.Designer.cs
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Program.cs
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Credit_card.exe
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\bin\x86\Debug\Credit_card.pdb
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csprojResolveAssemblyReference.cache
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Form1.resources
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.Properties.Resources.resources
+F:\Zoltán\Kakuk Balázs\Verziók\Végleges verzió\Credit_card\Credit_card\obj\x86\Debug\Credit_card.csproj.GenerateResource.Cache
